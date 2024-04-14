@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67406D0D2BCC59F6001993DE /* vorbisfile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67406D0C2BCC59F6001993DE /* vorbisfile.framework */; };
+		67406D0E2BCC59F6001993DE /* vorbisfile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 67406D0C2BCC59F6001993DE /* vorbisfile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		67406D112BCC5E0D001993DE /* game_of_life.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67406D0F2BCC5E0D001993DE /* game_of_life.cpp */; };
+		675E820A2B97B4A8005EE03A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 675E82092B97B4A8005EE03A /* main.cpp */; };
+		675E82472B97C7E0005EE03A /* sfml-audio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675E82182B97B62C005EE03A /* sfml-audio.framework */; };
+		675E82492B97C7E0005EE03A /* sfml-graphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675E82152B97B62C005EE03A /* sfml-graphics.framework */; };
+		675E824B2B97C7E0005EE03A /* sfml-network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675E82172B97B62C005EE03A /* sfml-network.framework */; };
+		675E824D2B97C7E0005EE03A /* sfml-system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675E82162B97B62C005EE03A /* sfml-system.framework */; };
+		675E824F2B97C7E0005EE03A /* sfml-window.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675E82132B97B62C005EE03A /* sfml-window.framework */; };
+		675E82542B97C9AB005EE03A /* sfml-audio.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675E82182B97B62C005EE03A /* sfml-audio.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		675E82552B97C9AB005EE03A /* sfml-graphics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675E82152B97B62C005EE03A /* sfml-graphics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		675E82562B97C9AB005EE03A /* sfml-network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675E82172B97B62C005EE03A /* sfml-network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		675E82572B97C9AB005EE03A /* sfml-system.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675E82162B97B62C005EE03A /* sfml-system.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		675E82582B97C9AB005EE03A /* sfml-window.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675E82132B97B62C005EE03A /* sfml-window.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		675E82612B97D0AF005EE03A /* vorbis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675E825A2B97D0AE005EE03A /* vorbis.framework */; };
+		675E82622B97D0AF005EE03A /* vorbis.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675E825A2B97D0AE005EE03A /* vorbis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		675E82632B97D0AF005EE03A /* ogg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675E825B2B97D0AE005EE03A /* ogg.framework */; };
+		675E82642B97D0AF005EE03A /* ogg.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675E825B2B97D0AE005EE03A /* ogg.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		675E82652B97D0AF005EE03A /* FLAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675E825C2B97D0AE005EE03A /* FLAC.framework */; };
+		675E82662B97D0AF005EE03A /* FLAC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675E825C2B97D0AE005EE03A /* FLAC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		675E82672B97D0AF005EE03A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675E825D2B97D0AE005EE03A /* OpenAL.framework */; };
+		675E82682B97D0AF005EE03A /* OpenAL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675E825D2B97D0AE005EE03A /* OpenAL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		675E826B2B97D0AF005EE03A /* freetype.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 675E825F2B97D0AF005EE03A /* freetype.framework */; };
+		675E826C2B97D0AF005EE03A /* freetype.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 675E825F2B97D0AF005EE03A /* freetype.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		675E82712B97DA60005EE03A /* Flower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 675E826F2B97DA60005EE03A /* Flower.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		675E82532B97C7E0005EE03A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				675E82662B97D0AF005EE03A /* FLAC.framework in Embed Frameworks */,
+				675E82542B97C9AB005EE03A /* sfml-audio.framework in Embed Frameworks */,
+				675E82622B97D0AF005EE03A /* vorbis.framework in Embed Frameworks */,
+				675E82552B97C9AB005EE03A /* sfml-graphics.framework in Embed Frameworks */,
+				675E82562B97C9AB005EE03A /* sfml-network.framework in Embed Frameworks */,
+				675E82642B97D0AF005EE03A /* ogg.framework in Embed Frameworks */,
+				675E82682B97D0AF005EE03A /* OpenAL.framework in Embed Frameworks */,
+				67406D0E2BCC59F6001993DE /* vorbisfile.framework in Embed Frameworks */,
+				675E82572B97C9AB005EE03A /* sfml-system.framework in Embed Frameworks */,
+				675E82582B97C9AB005EE03A /* sfml-window.framework in Embed Frameworks */,
+				675E826C2B97D0AF005EE03A /* freetype.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		67406D0C2BCC59F6001993DE /* vorbisfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vorbisfile.framework; path = "SFML-2.5.1-macos-clang/Frameworks/vorbisfile.framework"; sourceTree = "<group>"; };
+		67406D0F2BCC5E0D001993DE /* game_of_life.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game_of_life.cpp; sourceTree = "<group>"; };
+		67406D102BCC5E0D001993DE /* game_of_life.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = game_of_life.hpp; sourceTree = "<group>"; };
+		675E82062B97B4A8005EE03A /* GameOfLife */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GameOfLife; sourceTree = BUILT_PRODUCTS_DIR; };
+		675E82092B97B4A8005EE03A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		675E82102B97B4B9005EE03A /* SFML-2.5.1-macos-clang */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "SFML-2.5.1-macos-clang"; sourceTree = "<group>"; };
+		675E82122B97B563005EE03A /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = readme.md; path = "SFML-2.5.1-macos-clang/readme.md"; sourceTree = "<group>"; };
+		675E82132B97B62C005EE03A /* sfml-window.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-window.framework"; path = "SFML-2.5.1-macos-clang/Frameworks/sfml-window.framework"; sourceTree = "<group>"; };
+		675E82142B97B62C005EE03A /* SFML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SFML.framework; path = "SFML-2.5.1-macos-clang/Frameworks/SFML.framework"; sourceTree = "<group>"; };
+		675E82152B97B62C005EE03A /* sfml-graphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-graphics.framework"; path = "SFML-2.5.1-macos-clang/Frameworks/sfml-graphics.framework"; sourceTree = "<group>"; };
+		675E82162B97B62C005EE03A /* sfml-system.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-system.framework"; path = "SFML-2.5.1-macos-clang/Frameworks/sfml-system.framework"; sourceTree = "<group>"; };
+		675E82172B97B62C005EE03A /* sfml-network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-network.framework"; path = "SFML-2.5.1-macos-clang/Frameworks/sfml-network.framework"; sourceTree = "<group>"; };
+		675E82182B97B62C005EE03A /* sfml-audio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "sfml-audio.framework"; path = "SFML-2.5.1-macos-clang/Frameworks/sfml-audio.framework"; sourceTree = "<group>"; };
+		675E82592B97CAA6005EE03A /* GameOfLife.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GameOfLife.entitlements; sourceTree = "<group>"; };
+		675E825A2B97D0AE005EE03A /* vorbis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vorbis.framework; path = "SFML-2.5.1-macos-clang/extlibs/vorbis.framework"; sourceTree = "<group>"; };
+		675E825B2B97D0AE005EE03A /* ogg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ogg.framework; path = "SFML-2.5.1-macos-clang/extlibs/ogg.framework"; sourceTree = "<group>"; };
+		675E825C2B97D0AE005EE03A /* FLAC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FLAC.framework; path = "SFML-2.5.1-macos-clang/extlibs/FLAC.framework"; sourceTree = "<group>"; };
+		675E825D2B97D0AE005EE03A /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = "SFML-2.5.1-macos-clang/extlibs/OpenAL.framework"; sourceTree = "<group>"; };
+		675E825E2B97D0AF005EE03A /* vorbisenc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vorbisenc.framework; path = "SFML-2.5.1-macos-clang/extlibs/vorbisenc.framework"; sourceTree = "<group>"; };
+		675E825F2B97D0AF005EE03A /* freetype.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = freetype.framework; path = "SFML-2.5.1-macos-clang/extlibs/freetype.framework"; sourceTree = "<group>"; };
+		675E82602B97D0AF005EE03A /* vorbisfile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = vorbisfile.framework; path = "SFML-2.5.1-macos-clang/extlibs/vorbisfile.framework"; sourceTree = "<group>"; };
+		675E826F2B97DA60005EE03A /* Flower.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Flower.cpp; sourceTree = "<group>"; };
+		675E82702B97DA60005EE03A /* Flower.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Flower.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		675E82032B97B4A8005EE03A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				675E82652B97D0AF005EE03A /* FLAC.framework in Frameworks */,
+				675E82472B97C7E0005EE03A /* sfml-audio.framework in Frameworks */,
+				675E82612B97D0AF005EE03A /* vorbis.framework in Frameworks */,
+				675E824D2B97C7E0005EE03A /* sfml-system.framework in Frameworks */,
+				675E824B2B97C7E0005EE03A /* sfml-network.framework in Frameworks */,
+				675E82632B97D0AF005EE03A /* ogg.framework in Frameworks */,
+				675E82672B97D0AF005EE03A /* OpenAL.framework in Frameworks */,
+				67406D0D2BCC59F6001993DE /* vorbisfile.framework in Frameworks */,
+				675E824F2B97C7E0005EE03A /* sfml-window.framework in Frameworks */,
+				675E82492B97C7E0005EE03A /* sfml-graphics.framework in Frameworks */,
+				675E826B2B97D0AF005EE03A /* freetype.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		675E81FD2B97B4A8005EE03A = {
+			isa = PBXGroup;
+			children = (
+				675E82102B97B4B9005EE03A /* SFML-2.5.1-macos-clang */,
+				675E82082B97B4A8005EE03A /* GameOfLife */,
+				675E82072B97B4A8005EE03A /* Products */,
+				675E82112B97B562005EE03A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		675E82072B97B4A8005EE03A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				675E82062B97B4A8005EE03A /* GameOfLife */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		675E82082B97B4A8005EE03A /* GameOfLife */ = {
+			isa = PBXGroup;
+			children = (
+				675E82592B97CAA6005EE03A /* GameOfLife.entitlements */,
+				675E82092B97B4A8005EE03A /* main.cpp */,
+				675E826F2B97DA60005EE03A /* Flower.cpp */,
+				675E82702B97DA60005EE03A /* Flower.hpp */,
+				67406D0F2BCC5E0D001993DE /* game_of_life.cpp */,
+				67406D102BCC5E0D001993DE /* game_of_life.hpp */,
+			);
+			path = GameOfLife;
+			sourceTree = "<group>";
+		};
+		675E82112B97B562005EE03A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67406D0C2BCC59F6001993DE /* vorbisfile.framework */,
+				675E825C2B97D0AE005EE03A /* FLAC.framework */,
+				675E825F2B97D0AF005EE03A /* freetype.framework */,
+				675E825B2B97D0AE005EE03A /* ogg.framework */,
+				675E825D2B97D0AE005EE03A /* OpenAL.framework */,
+				675E825A2B97D0AE005EE03A /* vorbis.framework */,
+				675E825E2B97D0AF005EE03A /* vorbisenc.framework */,
+				675E82602B97D0AF005EE03A /* vorbisfile.framework */,
+				675E82182B97B62C005EE03A /* sfml-audio.framework */,
+				675E82152B97B62C005EE03A /* sfml-graphics.framework */,
+				675E82172B97B62C005EE03A /* sfml-network.framework */,
+				675E82162B97B62C005EE03A /* sfml-system.framework */,
+				675E82132B97B62C005EE03A /* sfml-window.framework */,
+				675E82142B97B62C005EE03A /* SFML.framework */,
+				675E82122B97B563005EE03A /* readme.md */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		675E82052B97B4A8005EE03A /* GameOfLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 675E820D2B97B4A8005EE03A /* Build configuration list for PBXNativeTarget "GameOfLife" */;
+			buildPhases = (
+				675E82022B97B4A8005EE03A /* Sources */,
+				675E82032B97B4A8005EE03A /* Frameworks */,
+				675E82532B97C7E0005EE03A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameOfLife;
+			productName = FlowerSFML;
+			productReference = 675E82062B97B4A8005EE03A /* GameOfLife */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		675E81FE2B97B4A8005EE03A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					675E82052B97B4A8005EE03A = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 675E82012B97B4A8005EE03A /* Build configuration list for PBXProject "GameOfLife" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 675E81FD2B97B4A8005EE03A;
+			productRefGroup = 675E82072B97B4A8005EE03A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				675E82052B97B4A8005EE03A /* GameOfLife */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		675E82022B97B4A8005EE03A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67406D112BCC5E0D001993DE /* game_of_life.cpp in Sources */,
+				675E82712B97DA60005EE03A /* Flower.cpp in Sources */,
+				675E820A2B97B4A8005EE03A /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		675E820B2B97B4A8005EE03A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SFML-2.5.1-macos-clang/Frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/SFML-2.5.1-macos-clang/Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "/Users/dariocaric/Downloads/SFML-2.5.1-macos-clang/lib/**";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		675E820C2B97B4A8005EE03A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/SFML-2.5.1-macos-clang/Frameworks/**";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/SFML-2.5.1-macos-clang/Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "/Users/dariocaric/Downloads/SFML-2.5.1-macos-clang/lib/**";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		675E820E2B97B4A8005EE03A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GameOfLife/GameOfLife.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3552Q3Q6S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SFML-2.5.1-macos-clang/Frameworks/**",
+					"$(PROJECT_DIR)/SFML-2.5.1-macos-clang/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/SFML-2.5.1-macos-clang/Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "/Users/dariocaric/Downloads/SFML-2.5.1-macos-clang/lib";
+				PRODUCT_BUNDLE_IDENTIFIER = test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		675E820F2B97B4A8005EE03A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GameOfLife/GameOfLife.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W3552Q3Q6S;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SFML-2.5.1-macos-clang/Frameworks/**",
+					"$(PROJECT_DIR)/SFML-2.5.1-macos-clang/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/SFML-2.5.1-macos-clang/Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "/Users/dariocaric/Downloads/SFML-2.5.1-macos-clang/lib";
+				PRODUCT_BUNDLE_IDENTIFIER = test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		675E82012B97B4A8005EE03A /* Build configuration list for PBXProject "GameOfLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				675E820B2B97B4A8005EE03A /* Debug */,
+				675E820C2B97B4A8005EE03A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		675E820D2B97B4A8005EE03A /* Build configuration list for PBXNativeTarget "GameOfLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				675E820E2B97B4A8005EE03A /* Debug */,
+				675E820F2B97B4A8005EE03A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 675E81FE2B97B4A8005EE03A /* Project object */;
+}

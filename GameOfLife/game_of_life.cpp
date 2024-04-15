@@ -10,24 +10,31 @@
 #include <vector>
 #include <algorithm>
 #include <random>
-
+#include <string>
+#include <sstream>
 
 game_of_life::game_of_life(RenderWindow *win) {
     window_local = win;
 }
 
-void game_of_life::drawGraphics() {
+void game_of_life::drawGraphics(int lifeCycles) {
+    
+    //stringstream sstr;
+    //sstr << "Game Of Life cycle: " << lifeCycles;
+    //window_local->setTitle(sstr.str());
+
     // draw rectangles at the position of _generation[i][j] with this formula x = 10 + (i-1) * 20 y = 10 + (j-1) * 20 with 10 width and height
     for (int i = 0; i < ROWS; i++) {
         for (int j = 0; j < COLS; j++) {
             if (_generation[i][j]) {
-                RectangleShape rectangle(Vector2f(10, 10));
-                rectangle.setPosition(10 + i * 20, 10 + j * 20);
-                // generate random color
-                Color color(rand() % 255, rand() % 255, rand() % 255);
-                if (rand() % 2 == 0) {
-                    color = Color::White;
-                }
+                RectangleShape rectangle(Vector2f(PIXELS_RECTANGLE, PIXELS_RECTANGLE));
+                rectangle.setPosition(PIXELS_RECTANGLE / 2 + (i-1) * PIXELS_RECTANGLE * 2, PIXELS_RECTANGLE / 2 + (j-1) * PIXELS_RECTANGLE * 2);
+                // generate random light color for live cells
+                int r = 180 - rand() % (255-120 +1);
+                int g = 180 - rand() % (255-120 +1);
+                int b = 180 - rand() % (255-120 +1);
+
+                Color color(r,g,b);
                 rectangle.setFillColor(color);
                 window_local->draw(rectangle);
             }
@@ -55,14 +62,12 @@ game_of_life::game_of_life(int percentage) {
     
     // generate ROWS * COLS * percentage/100 numbers between 1 and ROWS * COLS but without duplicates
     for (int i = 0; i < totalTrueCells; i++) {
-        int random = rand() % (ROWS * COLS);
-        int row = random / COLS;
-        int col = random % COLS;
+        int row = 1- rand() % (ROWS - 1 + 1); // 1-ROWS
+        int col = 1- rand() % (COLS - 1 + 1); // 1-COLS
         // if the cell is already true, generate another random number
         while (_generation[row][col]) {
-            random = rand() % (ROWS * COLS);
-            row = random / COLS;
-            col = random % COLS;
+            int row = 1- rand() % (ROWS - 1 + 1);
+            int col = 1- rand() % (COLS - 1 + 1);
         }
         _generation[row][col] = true;
     }

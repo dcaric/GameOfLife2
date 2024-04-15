@@ -98,7 +98,7 @@ void runNonGraphicsGameOfLife() {
 }
 
 void showGameOfLifeGraphics() {
-    RenderWindow window(VideoMode(900, 900), "game Of Life");
+    RenderWindow window(VideoMode(500, 500), "Game Of Life");
     window.setFramerateLimit(60);
     
     game_of_life gameOfLife(&window);
@@ -124,11 +124,18 @@ void showGameOfLifeGraphics() {
             if (event.type == Event::Closed)
                 window.close();
         }
+        
+        long lifeCycles = 0;
         // here comes main part of the game
         while (true) {
-            // draws the game
+            // draws the gamež
+            lifeCycles++;
             window.clear();
-            gameOfLife.drawGraphics();
+            gameOfLife.drawGraphics(lifeCycles);
+
+            stringstream sstr;
+            sstr << "Game Of Life cycle: " << lifeCycles;
+            window.setTitle(sstr.str());
             window.display();
             
             // calculates next generation

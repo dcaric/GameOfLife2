@@ -20,8 +20,10 @@ using namespace sf;
 class game_of_life {
 private:
     RenderWindow *window_local;
-    static const unsigned int COLS = 100;
-    static const unsigned int ROWS = 40;
+    static const unsigned int PIXELS_RECTANGLE = 2;
+
+    static const unsigned int COLS = 120;
+    static const unsigned int ROWS = 120;
     static const unsigned int PERCENTAGE = 35;
     bool _generation[ROWS][COLS];
     bool _next_generation[ROWS][COLS];
@@ -34,7 +36,7 @@ public:
     game_of_life(int percentage);
     void next_generation();
     void draw(int cycle);
-    void drawGraphics();
+    void drawGraphics(int);
 };
 
 #endif
